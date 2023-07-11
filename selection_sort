@@ -1,5 +1,8 @@
 #SORTING-Sorting is the process of arranging items in a specific order or sequence
 
+#SELECTION SORT-(o(n**2))the minimum element is selected from array and swap the smallest element from the array
+
+
 #SELECTION SORT-the minimum element is selected from array and swap the smallest element from the array
 ##l=list(map(int,input().split()))
 ##for i in range(len(l)):
@@ -10,3 +13,11 @@
 ##    l[i],l[k]=l[k],l[i]
 ##print(l)
 ##
+
+##l=list(map(int,input().split()))
+##for i in range(len(l)):
+##    for j in range(i+1,len(l)):
+##        if l[i]>l[j]:
+##            l[i],l[j]=l[j],l[i]
+##
+##print(l)
