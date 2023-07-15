@@ -1,0 +1,24 @@
+COUNTING_SORT:
+FIRST take counts of element in list
+multiply unique values in list to respective count
+example: 2 1 2 3 1 2 4
+count:  a= 2 3 1 1 0
+sorted l = 1 2 3 4 
+multiply elemnt a with count of l
+
+
+#program
+l=list(map(int,input().split()))
+x=[]
+l1=sorted(set(l))
+p=len(set(l))
+a=[0]*(p+1)
+for i in range(len(l1)):
+    a[i]=(l.count(l1[i]))
+for i in range(len(l1)):
+    b=a[i]*[l1[i]]
+    for j in range(len(b)):
+        x+=[b[j]]
+print(x)
+
+
